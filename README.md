@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3 - Starter
 
-Website: https://prashasthk.github.io/Lab2_Starter/
+Website: https://prashasthk.github.io/sp23-cse110-lab3/
