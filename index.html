@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE 110 Lab 2</title>
     <link rel="icon" type="image/x-icon" href="./assets/cse_110_logo.png">
+    <link rel="stylesheet" href="meetingstyle.css">
 </head>
 <body>
     <header>
@@ -14,12 +15,13 @@
         </nav>
     </header>
     <main>
-        <h1>Team Meeting Minute</h1>
+        <h1>Team Meeting Minutes</h1>
     </main>
     <em>A running log of this team's meeting minutes</em>
-    <hr>
-    <div>
-        <section>
+    <br><br><br>
+    <div class="test">
+        <hr>
+        <span class="left-span">
             <h2 id="meeting1"> <u> Meeting #1: Selecting A Team Name </u> </h2>
             <h3>April 16, 2023</h3>
             <details>
@@ -55,27 +57,38 @@
                 <summary><i>Actions</i>:</summary> 
                 <p>None as decision is pending</p>
             </details>
-        </section>
         <br>
-        <span>
-            <img src="./assets/meeting1_img.jpeg" alt="Meeting #1" width="300" height="200">
-            <br>
-            <i>An accurate artistic rendition of today's meeting</i>
-            <br>
-            <video width="300" height="200" controls>
-                <source src="./assets/recording.mp4" type="video/mp4">
-            </video>
-            <br>
-            <i>Video recording of today's meeting</i>
-            <br> <br>
-            <audio controls>
-                <source src="./assets/audio.mp3" type="audio/mpeg">
-            </audio>
-            <br>
-            <i>Audio recording of today's meeting</i>
         </span>
+        <div class="media">
+            <span class="box image">
+                <img src="./assets/meeting1_img.jpeg" alt="Meeting #1" width="300" height="200">
+                <br>
+                <i>An accurate artistic rendition of today's meeting</i>
+                <br>
+            </span>
+            <span class="box video">
+                <video class="box" width="300" height="200" controls>
+                    <source src="./assets/recording.mp4" type="video/mp4">
+                </video>
+                <br>
+                <i>Video recording of today's meeting</i>
+                <br>
+            </span>
+            <span class="box audio">
+                <audio class="box" controls>
+                    <source src="./assets/audio.mp3" type="audio/mpeg">
+                </audio>
+                <br>
+                <i>Audio recording of today's meeting</i>
+            </span>    
+        </div>
+        <hr>
     </div>
-    <hr>
+  
+    <br>
+    
+    
+  
     <div>
         <h2 id="meeting2"><u>Meeting #2: Selecting A Team Name v2</u></h2>
         <h3>April 19, 2023</h3>

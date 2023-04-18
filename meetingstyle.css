@@ -1,0 +1,16 @@
+body {
+    background-color: #181A18;
+    color: #FBFCF8;
+    display: grid;
+}
+h2 {
+    color: white;
+    text-decoration: solid;
+    text-align: left;
+}
+.box {
+   display: inline-block;
+   text-align: center;
+   border: 2px solid lightblue;
+   vertical-align: middle;
+}
