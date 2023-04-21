@@ -7,6 +7,12 @@
     <link rel="icon" type="image/x-icon" href="./assets/cse_110_logo.png">
     <link rel="stylesheet" href="meetingstyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo Mono">
+    <style>
+        /* Override universal text color for special case */
+        form button {
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -63,13 +69,13 @@
         <br>
         </div>
         <div class="media">
-            <span class="box image">
+            <span class="image">
                 <img style="border: 3px solid #FFCC00" src="./assets/meeting1_img.jpeg" alt="Meeting #1" width="300" height="200">
                 <br>
                 <i>An accurate artistic rendition of today's meeting</i>
                 <br>
             </span>
-            <span class="box video">
+            <span class="video">
                 <video style="border: 3px solid #FFCC00" width="300" height="200" controls>
                     <source src="./assets/recording.mp4" type="video/mp4">
                 </video>
@@ -77,24 +83,24 @@
                 <i style="text-align: center">Video recording of today's meeting</i>
                 <br>
             </span>
-            <span class="box audio">
-                <audio style="border: 3px solid #FFCC00; border-radius: 30px" controls>
+            <span class="audio">
+                <audio style="border: 3px solid #FFCC00" controls>
                     <source src="./assets/audio.mp3" type="audio/mpeg">
                 </audio>
                 <br>
                 <i>Audio recording of today's meeting</i>
             </span>    
         </div>
-        <br><hr>
     </div>
-    <div>
+    <div class="meeting">
+        <hr>
         <h2 id="meeting2"><u>Meeting #2: Selecting A Team Name v2</u></h2>
         <h3>April 19, 2023</h3>
         <br><hr>
     </div>
     <br> <br>
     <form>
-        <fieldset>
+        <fieldset id="form-meeting">
             <legend>Sign up for meeting notifications!</legend>
             <label>Name:</label>
             <input type="text"><br><br>

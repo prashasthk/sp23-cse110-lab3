@@ -1,10 +1,16 @@
+/* Universal text color */
+* {
+    color: #FBFCF8;
+}
 /* Set general properties for the bulk of the page */
 body {
     background-color: #181A18;
     font-family: "Geneva", "Tahoma", sans-serif;
-    color: #FBFCF8;
     display: grid;
-    margin: 20px 20px 20px 20px;
+    row-gap: 10px;
+    grid-auto-flow: row;
+    column-gap: 0px;
+    margin: 10px 10px 10px 10px;
 }
 /* Set unvisited link color to soft white */
 a:link {
@@ -14,54 +20,83 @@ a:link {
 a:visited {
     color: #ADD8E6;
 }
+/* Set "copperplate" font for webpage title */
 h1 {
     font-family: "Copperplate";
 }
+/* Hover pseudo-class for webpage title */
+h1:hover, em:hover {
+    color: lightblue;
+}
 /* Change meeting title text properties */
-h2 {
+div > h2 {
     color: white;
-    font-size: 130%;
+    font-size: 1.4em;
     font-family: "Georgia", "Garamond", serif;
     text-decoration: solid;
     text-align: left;
 }
 /* Use third-party font for displaying font */
-h3 {
+h2 + h3 {
     font-family: "Chivo Mono";
+    font-size: 1.1rem;
+}
+/* Resize "unfinished tasks" paragraph font */
+h3 ~ p {
+    font-size: 90%;
 }
 /* Display meeting image, video, audio side by side */
-.box {
+.image, .video, .audio {
    display: inline-block;
    text-align: center;
    margin-top: 20px;
    margin-right: 20px;
    margin-left: 20px;
    margin-bottom: 20px;
-   padding-top: 10px;
-   padding-left: 10px;
-   padding-right: 10px;
-   padding-bottom: 10px;
+   padding-top: 7.5pt;
+   padding-left: 7.5pt;
+   padding-right: 7.5pt;
+   padding-bottom: 7.5pt;
 }
 /* Set box properties for meeting div */
 .meeting {
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 0px 5px;
     position: relative;
     height: auto;
-    width: auto;
+    width: auto; 
 }
 /* Set basic box properties for media div */
-.media {
+div .media {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
     height: auto;
     width: auto;
-    max-width: 3000px;
-    min-width: 3000px;
+    max-width: fit-content;
+    min-width: fit-content;
     margin: auto;
     position: static;
 }
 /* Stylize border on form at the bottom of the page */
-fieldset {
+#form-meeting {
    border-style: dotted;
    border-color: lightblue;
-   border-width: 2px;
-   border-radius: 2px;
+   border-width: 0.2vw;
+}
+/* Select the audio recording to implement an extra attribute */
+audio[style="border: 3px solid #FFCC00"] {
+    border-radius: 32px;
+}
+/* Active pseudo-class for submit button */
+button:active {
+    color: lightgreen;
+    border-style: solid;
+    border-color: green;
+}
+/* Set webpage background color to dark gray if viewport is less than or equal to 30 cm wide */
+@media (max-width: 30cm) {
+   body {
+    background-color: #191970;
+   }
 }
