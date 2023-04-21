@@ -16,10 +16,10 @@
 | 4 | | | | |
 | 5 | | | | |
 
----
 <br>
 
 ---
+
 <br>
 
 ## Tuesday (Date)
@@ -31,11 +31,12 @@
 | 4 | | | | |
 | 5 | | | | |
 
----
 <br>
 
 ---
+
 <br>
+
 
 ## Wednesday (Date)
 | | Name | Priorities | Progress | Problems | 
@@ -46,11 +47,12 @@
 | 4 | | | | |
 | 5 | | | | |
 
----
 <br>
 
 ---
+
 <br>
+
 
 ## Thursday (Date)
 | | Name | Priorities | Progress | Problems | 
@@ -61,11 +63,12 @@
 | 4 | | | | |
 | 5 | | | | |
 
----
 <br>
 
 ---
+
 <br>
+
 
 ## Friday (Date)
 | | Name | Priorities | Progress | Problems | 
@@ -76,4 +79,4 @@
 | 4 | | | | |
 | 5 | | | | |
 
----
+<br>
