@@ -59,7 +59,7 @@ h3 ~ p {
    padding-bottom: 7.5pt;
 }
 /* Set box properties for meeting div */
-.meeting {
+div.meeting {
     padding: 5px 5px 0px 5px;
     position: relative;
     height: auto;
