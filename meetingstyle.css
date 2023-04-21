@@ -1,16 +1,67 @@
+/* Set general properties for the bulk of the page */
 body {
     background-color: #181A18;
+    font-family: "Geneva", "Tahoma", sans-serif;
     color: #FBFCF8;
     display: grid;
+    margin: 20px 20px 20px 20px;
 }
+/* Set unvisited link color to soft white */
+a:link {
+    color: #FBFCF8; 
+}
+/* Set visited link color to light blue */
+a:visited {
+    color: #ADD8E6;
+}
+h1 {
+    font-family: "Copperplate";
+}
+/* Change meeting title text properties */
 h2 {
     color: white;
+    font-size: 130%;
+    font-family: "Georgia", "Garamond", serif;
     text-decoration: solid;
     text-align: left;
 }
+/* Use third-party font for displaying font */
+h3 {
+    font-family: "Chivo Mono";
+}
+/* Display meeting image, video, audio side by side */
 .box {
    display: inline-block;
    text-align: center;
-   border: 2px solid lightblue;
-   vertical-align: middle;
+   margin-top: 20px;
+   margin-right: 20px;
+   margin-left: 20px;
+   margin-bottom: 20px;
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+}
+/* Set box properties for meeting div */
+.meeting {
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    height: auto;
+    width: auto;
+}
+/* Set basic box properties for media div */
+.media {
+    height: auto;
+    width: auto;
+    max-width: 3000px;
+    min-width: 3000px;
+    margin: auto;
+    position: static;
+}
+/* Stylize border on form at the bottom of the page */
+fieldset {
+   border-style: dotted;
+   border-color: lightblue;
+   border-width: 2px;
+   border-radius: 2px;
 }
